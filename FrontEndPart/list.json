@@ -1,0 +1,159 @@
+{
+  "high bp": [
+    {
+      "name": "Eat a healthy diet."
+    },
+    {
+      "name": "Exercise regularly."
+    },
+    {
+      "name": "Get a good night's sleep."
+    },
+    {
+      "name": "Limit alcohol."
+    },
+    {
+      "name": "Lose extra pounds and watch your waistline. Blood pressure often increases as weight increases."
+    },
+    {
+      "name": "Monitor your blood pressure at home and get regular checkups."
+    },
+    {
+      "name": "Reduce salt (sodium) in your diet."
+    },
+    {
+      "name": "Reduce stress."
+    }
+  ],
+  "low bp": [
+    {
+      "name": "Avoid alcohol"
+    },
+    {
+      "name": "Avoid hot environments"
+    },
+    {
+      "name": "Change positions slowly"
+    },
+    {
+      "name": "Eat small, frequent meals"
+    },
+    {
+      "name": "Increase fluid intake: Drinking plenty of fluids can help raise blood pressure."
+    },
+    {
+      "name": "Wear compression stockings"
+    }
+  ],
+  "diabetes": [
+    {
+      "name": "Be more physically active"
+    },
+    {
+      "name": "Don't smoke"
+    },
+    {
+      "name": "Drink water"
+    },
+    {
+      "name": "Eat fiber"
+    },
+    {
+      "name": "Eat healthy plant foods"
+    },
+    {
+      "name": "Keep your blood pressure and cholesterol under control"
+    },
+    {
+      "name": "Lose extra weight"
+    },
+    {
+      "name": "Take care of your teeth"
+    }
+  ],
+  "diarrhoea": [
+    {
+      "name": "Avoid eating street food"
+    },
+    {
+      "name": "Keep yourself hydrated"
+    },
+    {
+      "name": "Never eat raw and uncooked food"
+    }
+  ],
+  "vomiting": [
+    {
+      "name": "Avoid caffeine, alcohol and carbonated drinks"
+    },
+    {
+      "name": "Avoid food that could trigger nausea and vomiting"
+    },
+    {
+      "name": "Avoid greasy and processed foods, and foods that contain a lot of salt"
+    },
+    {
+      "name": "Avoid strong odors"
+    },
+    {
+      "name": "Avoid very spicy foods"
+    }
+  ],
+  "fever": [
+    {
+      "name": "Avoid cold drinks."
+    },
+    {
+      "name": "Avoid performing strenuous activities."
+    },
+    {
+      "name": "Eat freshly prepared food."
+    },
+    {
+      "name": "Never use rubbing alcohol or cold baths to bring the fever down."
+    },
+    {
+      "name": "Offer plenty of liquids to avoid dehydration."
+    },
+    {
+      "name": "Remember to drink lots of fluids."
+    }
+  ],
+  "migraine": [
+    {
+      "name": "Cut down the caffeine"
+    },
+    {
+      "name": "Don't skip meals"
+    },
+    {
+      "name": "Eat wisely"
+    },
+    {
+      "name": "Find a calm environment"
+    },
+    {
+      "name": "Get regular shut-eye"
+    },
+    {
+      "name": "Sleep well"
+    }
+  ],
+  "cough and cold": [
+    {
+      "name": "Avoiding close contact with sick people"
+    },
+    {
+      "name": "Avoiding touching one’s eyes, nose or mouth"
+    },
+    {
+      "name": "Early self-isolation of those feeling unwell, feverish and having other symptoms of influenza"
+    },
+    {
+      "name": "Good respiratory hygiene – covering mouth and nose when coughing or sneezing, using tissues and disposing of them correctly"
+    },
+    {
+      "name": "Regular hand washing with proper drying of the hands"
+    }
+  ]
+}

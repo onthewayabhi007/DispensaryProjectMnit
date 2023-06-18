@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/prescriptionForm.css">
+    <link rel="stylesheet" href="./css/virtual-select.min.css">
+</head>
+
+<body>
+<div class="GoBack">
+    <a href="/doctorWindow_patientLoginPage.html"><i class="fa fa-arrow-left"></i></a>
+</div>
+<div class="container">
+
+    <!-- heading -->
+    <div class="heading">
+        <h1>Add Prescription</h1>
+    </div>
+    <!-- Prescription form started-->
+    <div class="grid_view">
+        <!-- id -->
+        <div class="patientID" id="patient-id"></div>
+        <!-- name -->
+        <div class="Name" id="patient-name">
+            <!-- <label for="name">Name:</label> -->
+            <!-- <h4></h4> -->
+           <h3></h3>
+        </div>
+        <!-- date -->
+        <div class="VisitDate">
+            <label for="date">Visit Date:</label>
+            <script></script>
+            <p></p>
+        </div>
+        <!-- illness checkbox list -->
+
+        <div class="multi-selector">
+            <label>Illness:</label>
+            <div class="select-field" id="select-field1">
+                <input type="text" name="" placeholder="Select Illness" id="illness1" class="input-selector">
+                <span class="down-arrow" id="down-arrow1">&blacktriangledown;</span>
+            </div>
+            <!---------List of checkboxes and options----------->
+            <div class="list" id="list1">
+
+            </div>
+
+        </div>
+
+        <!-- illness list completed -->
+
+        <!-- symptoms checkbox list -->
+
+        <div class="multi-selector">
+            <label>Symptoms:</label>
+            <div class="select-field" id="select-field2">
+                <input type="text" name="" placeholder="Select Symptoms" id="symptoms1" class="input-selector">
+                <span class="down-arrow" id="down-arrow2">&blacktriangledown;</span>
+            </div>
+            <!---------List of checkboxes and options----------->
+            <div class="list" id="list2">
+
+            </div>
+
+        </div>
+
+        <!-- symptoms list completed -->
+        <table class="_table" id="medicine-table">
+            <thead>
+            <tr>
+                <th>Medicine Name</th>
+                <th>Medicine Type</th>
+                <th>Dosage</th>
+                <th>Timings</th>
+                <th>Quantity Prescribed</th>
+                <th width="50px">
+                    <div class="action_container">
+                        <button class="success" id="addColumn">Add</button>
+                    </div>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="table_body">
+
+<!--            <tr>-->
+<!--                <form>-->
+<!--                    <td>-->
+<!--                        <select name="MedicinePrescribed" id="medicine-name" required>-->
+<!--                            <option value="">Select Medicine Name</option>-->
+<!--                        </select>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <select name="MedicineType" id="mt">-->
+<!--                            <option value="Injections">Injections</option>-->
+<!--                            <option value="Syrup">Syrup</option>-->
+<!--                            <option value="Tablets">Tablets</option>-->
+<!--                            <span></span>-->
+<!--                        </select>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <select name="Dosage" id="dosage">-->
+<!--                            <option value="o.d">o.d</option>-->
+<!--                            <option value="b.i.d">b.i.d</option>-->
+<!--                            <option value="t.i.d">t.i.d</option>-->
+<!--                            <option value="q.i.d">q.i.d</option>-->
+<!--                            <span></span>-->
+<!--                        </select>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <select name="Timing" id="timing">-->
+<!--                            <option value="Morning Before Meal">Morning Before Meal</option>-->
+<!--                            <option value="Morning After Meal">Morning After Meal</option>-->
+<!--                            <option value="After Every Meal">After Every Meal</option>-->
+<!--                            <option value="Before Every Me val">Before Every Me val</option>-->
+<!--                            <option value="At night before Bed">At night before Bed</option>-->
+<!--                            <span></span>-->
+<!--                        </select>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <select name="Quantity Prescribed" id="qp">-->
+<!--                            <option value=1>1</option>-->
+<!--                            <option value=2>2</option>-->
+<!--                            <option value=3>3</option>-->
+<!--                            <option value=4>4</option>-->
+<!--                            <option value=5>5</option>-->
+<!--                            <option value=6>6</option>-->
+<!--                            <option value=7>7</option>-->
+<!--                            <option value=8>8</option>-->
+<!--                            <option value=9>9</option>-->
+<!--                            <option value=10>10</option>-->
+<!--                            <span></span>-->
+<!--                        </select>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <div class="action_container">-->
+<!--                            <button class="danger" id="removeColumn" >Remove</button>-->
+<!--                        </div>-->
+<!--                    </td>-->
+<!--                </form>-->
+<!--            </tr>-->
+            </tbody>
+        </table>
+        <!-- Advisory checkbox list -->
+
+        <div class="multi-selector">
+            <label>Advisory:</label>
+            <div class="select-field" id="select-field3">
+                <input type="text" name="" placeholder="Select Advisory" id="advisory1" class="input-selector">
+                <span class="down-arrow" id="down-arrow3">&blacktriangledown;</span>
+            </div>
+            <!---------List of checkboxes and options----------->
+            <div class="list" id="list3">
+
+            </div>
+
+        </div>
+
+        <!-- Advisory list completed -->
+        <div class="submit">
+            <button type="submit" class="btn" id="submit-button">Submit</button>
+            <div class="popup" id="popup">
+                <img src="https://i.postimg.cc/zGD23MGB/tick2.png">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully Submitted.Thanks!</p>
+                <button type="button" class="yup" id="okay-button">Ok</button>
+            </div>
+        </div>
+
+        <div class="Patient_History">
+            <!--            <a href="/patientDetails/Navbar.html"><button>View Patient's Medical History</button></a>-->
+        </div>
+
+
+    </div>
+    <script>
+
+    </script>
+    <script type="text/javascript" src="virtual-select.min.js"></script>
+    <script type="text/javascript">
+        VirtualSelect.init({
+            ele: '#multipleSelect1'
+        });
+        VirtualSelect.init({
+            ele: '#multipleSelect2'
+        });
+        VirtualSelect.init({
+            ele: '#multipleSelect3'
+        });
+    </script>
+
+    <script>
+        // Get a reference to the logout button
+        const logoutButton = document.getElementById("logout-button");
+
+        // Add a click event listener to the logout button
+        logoutButton.addEventListener("click", function() {
+            // Clear any saved login credentials
+            localStorage.removeItem("username");
+            localStorage.removeItem("password");
+
+            // Redirect the user to the login page
+            window.location.href = "login.html";
+        });
+    </script>
+
+    <script type="module" src="prescriptionForm.js"></script>
+
+
+<!--        function remove_tr(btn) {-->
+<!--            if (btn.closest('tbody').childElementCount === 1) {-->
+<!--                alert("you don't have permission to delete this");-->
+<!--            } else {-->
+<!--                btn.closest('tr').remove();-->
+<!--            }-->
+<!--        }-->
+<!--   </script>&ndash;&gt;-->
+
+</div>
+
+</body>
+
+</html>

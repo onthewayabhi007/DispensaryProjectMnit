@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient login</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./css/patientLoginPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<div class="sidebar">
+    <header>
+        <img src="https://i.postimg.cc/rpZ167bg/bad786dfe4f227555be6fa2484b0b9a3.jpg" alt="">
+        <h3>XYZ</h3>
+    </header>
+    <ul>
+        <li><a id="stock-table"><i class="fas fa-qrcode"></i>MedicineStock Details</a></li>
+        <li><a id="patient-login" "><i class="fas fa-user-alt"></i>Patient Login</a></li>
+    </ul>
+</div>
+<!-- Navigationa Bar Started -->
+<nav>
+    <div class="container nav__container">
+        <a href="index.html"><img src="https://mnit.ac.in/Images/Mnit_logo.png" width="75px" height="75px"></a>
+        <h5 class="text-white">
+            <a class="mnit-english-name">Malaviya National Institute of Technology Jaipur </a>
+            <a class="mnit-hindi-name">मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर</a>
+        </h5>
+        <ul class="nav__menu">
+            <li id="logout-button"><a><i class="fas fa-solid fa-right-to-bracket"></i>&nbsp;logout</a></li>
+        </ul>
+        <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+        <button id="close-menu-button"><i class="uil uil-times"></i></button>
+    </div>
+</nav>
+
+<!-- Navigation Bar completed-->
+
+<div class="center">
+    <h3>PATIENT LOGIN</h3>
+    <form method="post">
+        <div class="txt_field">
+            <label>Patient ID</label>
+            <span></span>
+            <input id="patient-id-input" type="text" required/>
+        </div>
+        <a><input id="search-btn" type="button" value="Search"></a>
+    </form>
+
+    <script>
+        document.getElementById("stock-table").addEventListener('click', () => {
+            window.location.replace('stockTable.html');
+        })
+        document.getElementById("patient-login").addEventListener('click', () => {
+            window.location.replace('patientLoginPage.html');
+        })
+        // Get a reference to the logout button
+        const logoutButton = document.getElementById("logout-button");
+        const search = document.getElementById("search-btn");
+
+        // Add a click event listener to the logout button
+        search.addEventListener("click", ev => {
+            window.location.href = 'medicineGiven_prescriptionForm.html';
+            const field = document.querySelector("#patient-id-input").value;
+            // console.log(field);
+            localStorage.setItem("patient_id", JSON.stringify(field));
+        })
+        logoutButton.addEventListener("click", function () {
+            // Clear any saved login credentials
+            localStorage.clear();
+
+            // Redirect the user to the login page
+            window.location.replace("login1.html");
+        });
+    </script>
+    <script type="module">
+        const logoutButton = document.getElementById("logout-button");
+
+        // Add a click event listener to the logout button
+        logoutButton.addEventListener("click", function () {
+// Clear any saved login credentials
+            localStorage.removeItem("username");
+            localStorage.removeItem("password");
+
+// Redirect the user to the login page
+            window.location.href = "Login1.html";
+        });
+
+    </script>
+</div>
+</body>
+</html>

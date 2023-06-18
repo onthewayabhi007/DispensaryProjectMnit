@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prescription Form</title>
+    <link stylesheet="./css/prescription.css">
+    <link rel="stylesheet" href="./css/prescription.css">
+</head>
+
+<body>
+    <div class="prescription">
+        <div class="header">
+            <img src="https://i.postimg.cc/HLMTMLNh/MNIT-logo.png"><br>
+            <h1>MNIT DISPENSARY</h1><br>
+        </div>
+        <div class="prescribed-by">
+            <strong>Prescribed to:</strong> <span id="patient-name"></span><br>
+            <strong>Prescribed by:</strong> <span id="doctor-name"></span><br>
+            <strong>Disease/Illness:</strong> <span id="disease"></span><br>
+            <strong>Date:</strong> <span id="date"></span><br>
+        </div>
+        <br>
+        <div class="medicine-list">
+            <table id="medicine-table">
+                <thead>
+                    <!-- Table columns -->
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Dosage<small> (per day)</small></th>
+                        <th>Dose Timings:</th>
+                        <th>Quantity Prescribed</th>
+                        <th>Quantity Given</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Medicine rows -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- signature of the doctor -->
+        <div class="signature">
+            <strong id="doctor-signature"></strong><br>
+            <strong id="doctor-type"></strong><br>
+        </div>
+
+        <!-- Cautio of the reserved rights -->
+        <div class="caution">
+            <small>Disclaimer: Copyright © 2022 Malaviya National Institute of Technology Jaipur</small>
+        </div>
+
+        <!-- printing button -->
+        <div class="print">
+            <button id="print-button" class="no-print" onclick="printPrescription()">Print</button>
+        </div>
+    </div>
+
+    <script src="prescription.js"></script></body>
+
+</html>

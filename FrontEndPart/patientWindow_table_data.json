@@ -1,0 +1,800 @@
+{
+    "patient": {
+        "name": "Abhi Verma",
+        "id": "2021UCH1028"
+    },
+    "visits": [
+        {
+            "date": "2022-01-01",
+            "doctorName": "Dr. Meenu Kocchar",
+            "illness": "High Fever",
+            "medicines": [
+                {
+                    "name": "Medicine A"
+                },
+                {
+                    "name": "Medicine B"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "100mg"
+                },
+                {
+                    "number1": "100mg"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "10"
+                },
+                {
+                    "number2": "10"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "10"
+                },
+                {
+                    "number3": "8"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        },
+        {
+            "date": "2022-02-15",
+            "doctorName": "Dr. Ashish",
+            "illness": "Maleria",
+            "medicines": [
+                {
+                    "name": "Medicine S"
+                }
+            ],
+            "dosages": [
+                {
+                    "number1": "0"
+                }
+            ],
+            "quantities": [
+                {
+                    "number2": "2"
+                }
+            ],
+            "quantities_Given": [
+                {
+                    "number3": "0"
+                }
+            ],
+            "Advisory": "rsjgkzj;rOKRGHJ"
+        }
+    ]
+}

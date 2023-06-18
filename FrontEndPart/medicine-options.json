@@ -1,0 +1,70 @@
+[
+    {
+        "value": "",
+        "text": "Select Medicine"
+    },
+    {
+        "value": "amoxicillin",
+        "text": "Amoxicillin"
+    },
+    {
+        "value": "amlodipine",
+        "text": "Amlodipine"
+    },
+    {
+        "value": "aspirin",
+        "text": "Aspirin"
+    },
+    {
+        "value": "atenolol",
+        "text": "Atenolol"
+    },
+    {
+        "value": "azithromycin",
+        "text": "Azithromycin"
+    },
+    {
+        "value": "cephalexin",
+        "text": "Cephalexin"
+    },
+    {
+        "value": "furosemide",
+        "text": "Furosemide"
+    },
+    {
+        "value": "hydrochlorothiazide",
+        "text": "Hydrochlorothiazide"
+    },
+    {
+        "value": "ibuprofen",
+        "text": "Ibuprofen"
+    },
+    {
+        "value": "losartan",
+        "text": "Losartan"
+    },
+    {
+        "value": "metoprolol",
+        "text": "Metoprolol"
+    },
+    {
+        "value": "omeprazole",
+        "text": "Omeprazole"
+    },
+    {
+        "value": "pantoprazole",
+        "text": "Pantoprazole"
+    },
+    {
+        "value": "paracetamol",
+        "text": "Paracetamol"
+    },
+    {
+        "value": "ranitidine",
+        "text": "Ranitidine"
+    },
+    {
+        "value": "spironolactone",
+        "text": "Spironolactone"
+    }
+]

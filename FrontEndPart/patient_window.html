@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNIT DISPENSARY</title>
+    <!--iconscout cdn link -->
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/patientWindow.css">
+</head>
+
+<body>
+    <!-- Navigationa Bar Started -->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><img src="https://mnit.ac.in/Images/Mnit_logo.png" width="75px" height="75px"></a>
+            <h5 class="text-white">
+                <a class="mnit-english-name">Malaviya National Institute of Technology Jaipur </a>
+                <a class="mnit-hindi-name">मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर</a>
+            </h5>
+            <ul class="nav__menu">
+                <li><a><i class="fas fa-solid fa-right-to-bracket" id="logout-button"></i>&nbsp;logout</a></li>
+            </ul>
+            <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+            <button id="close-menu-button"><i class="uil uil-times"></i></button>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar completed-->
+    <div class="table_container">
+        <div class="container Name_id">
+            <div id="patient-info" class="patient-info"></div>
+            <div class="tableBody">
+                <table id="visits-table">
+                    <thead>
+                        <tr>
+                            <th>VisitDate</th>
+                            <th>Doctor's Name</th>
+                            <th>Illness</th>
+                            <th>Medicines Prescribed</th>
+                            <th>Dosage</th>
+                            <th>Timings</th>
+                            <th>Quantity Prescribed</th>
+                            <th>Quantity Given</th>
+                            <th>Advisory</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="Givefeedback">
+        <a href="patientWindow_feedback_form.html"><button>Give Feedback</button></a>
+    </div>
+
+    <script type="module" src="patientWindow.js"></script>
+
+    <script>
+        const logoutButton = document.getElementById("logout-button");
+
+        // Add a click event listener to the logout button
+        logoutButton.addEventListener("click", function () {
+            // Clear any saved login credentials
+            localStorage.clear();
+            // Redirect to login page
+            window.location.href = "admin_logins.html";
+
+            // Clear history and backstack
+            window.history.replaceState(null, "", "/");
+        });
+    </script>
+</body>
+
+</html>

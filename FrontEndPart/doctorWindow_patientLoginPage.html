@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient login</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/css/doctorWindow_patientLoginPage.css">
+</head>
+<body>
+<div class="sidebar">
+    <header>
+        <img src="https://i.postimg.cc/TPycsHwH/DocImage.webp" alt="error loading image">
+        <h3>Dr. Shobha Jindal</h3>
+    </header>
+    <ul>
+        <li><a href="doctorWindow_dashboard.html"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+        <li><a href="doctorWindow_patientLoginPage.html"><i class="fas fa-user-alt"></i>Patient Login</a></li>
+        <!-- <li><a href="doctorWindow_docfeedback.html"><i class="fa-solid fa-comments"></i>Doctor's Feedback</a></li> -->
+    </ul>
+</div>
+<!-- Navigationa Bar Started -->
+<nav>
+    <div class="container nav__container">
+        <a href="index.html"><img src="https://mnit.ac.in/Images/Mnit_logo.png" width="75px" height="75px"></a>
+        <h5 class="text-white">
+            <a class="mnit-english-name">Malaviya National Institute of Technology Jaipur </a>
+            <a class="mnit-hindi-name">मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर</a>
+        </h5>
+        <ul class="nav__menu">
+            <li><a id="logout-button" ><i class="fas fa-solid fa-right-to-bracket" ></i>&nbsp;logout</a></li>
+        </ul>
+        <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+        <button id="close-menu-button"><i class="uil uil-times"></i></button>
+    </div>
+</nav>
+
+<!-- Navigation Bar completed-->
+
+<div class="center">
+    <h3>PATIENT LOGIN</h3>
+    <form method="post">
+        <div class="txt_field">
+            <label>Patient ID</label>
+            <span></span>
+            <input type="text" id="idDetailsForPrescriptionForm" required>
+        </div>
+        <a><input id="search-btn" type="button" value="Search"></a>
+    </form>
+</div>
+<script type="module">
+    // const document =
+    const searchBtn = document.getElementById("search-btn");
+    searchBtn.addEventListener('click', (event) => {
+        var patientId = document.getElementById("idDetailsForPrescriptionForm").value;
+        // console.log(patientId)
+        localStorage.setItem("ifOfPatientForForm", JSON.stringify(patientId));
+        window.location.href = 'prescriptionForm.html'
+    })
+</script>
+<script type = "module">
+        const logoutButton = document.getElementById("logout-button");
+
+// Add a click event listener to the logout button
+logoutButton.addEventListener("click", function() {
+// Clear any saved login credentials
+localStorage.removeItem("username");
+localStorage.removeItem("password");
+
+// Redirect the user to the login page
+window.location.href = "Login1.html";
+});
+
+</script>
+</body>
+</html>

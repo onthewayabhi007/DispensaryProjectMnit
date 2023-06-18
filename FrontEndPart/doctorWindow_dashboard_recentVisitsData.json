@@ -1,0 +1,26 @@
+{
+
+    "perDaypatient": {
+        "perDay": "2"
+    },
+    "totalpatient": {
+        "total": "14"
+    },
+
+    "recentVisits": [
+        {
+            "date": "2022-01-01",
+            "Name": "Meenu Gupta",
+            "ID": "2021UCH1698",
+            "PhoneNo": "8976547876",
+            "illness": "High Fever"
+        },
+        {
+            "date": "2022-01-05",
+            "Name": "Jiya Gupta",
+            "ID": "2021UCH1700",
+            "PhoneNo": "8976556789",
+            "illness": "Maleria"
+        }
+    ]
+}

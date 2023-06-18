@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNIT DISPENSARY</title>
+    <!--iconscout cdn link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- CSS sheet link -->
+    <link rel="stylesheet" href="./css/Login1.css">
+</head>
+
+<body>
+   <!-- Navigationa Bar Started -->
+   <nav>
+    <div class="container nav__container">
+
+        <a href="index.html"><img class="Mnit_logo_main" src="https://mnit.ac.in/Images/Mnit_logo.png"></a>
+        <h5 class="text-white">
+            <ul>
+                <li><a href="index.html">Malaviya National Institute of Technology Jaipur</a></li>
+                <li><a href="index.html">मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर</a></li>
+            </ul>
+        </h5>
+        <ul class="nav__menu">
+            <li><a href="index.html"><i class="uil uil-estate"></i>Home</a></li>
+            <li><a href="about.html"><i class="uil uil-atom"></i>About</a></li>
+            <li><a href="Doctor.html"><i class="uil uil-user-md"></i>Doctors </a></li>
+<!--            <li><a href="contacts.html"><i class="uil uil-phone-pause"></i>Contacts</a></li>-->
+            <li><a href="Login1.html"><i class="uil uil-sign-in-alt"></i>login</a></li>
+        </ul>
+        <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+        <button id="close-menu-button"><i class="uil uil-times"></i></button>
+    </div>
+</nav>
+
+<!-- Navigation Bar completed-->
+    <!-- Adding the animated login form -->
+
+    <div class="center">
+        <h3>User type</h3>
+        <form method="post">
+            <br>
+            <div class="txt_field">
+                <a href=" Login.html" class="button-primary">Student</a>
+            </div>
+            <div class="txt_field">
+                <a href=" Login.html" class="button-primary">Staff</a>
+            </div>
+            <div class="txt_field">
+                <a href=" Login_med_staff.html" class="button-primary">Medical Staff</a>
+            </div>
+            <div class="txt_field">
+                <a href=" Login_doc.html" class="button-primary">Doctor</b></a>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Animated background -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+        <defs>
+            <linearGradient id="bg">
+                <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+                <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+                <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+            </linearGradient>
+            <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+        </defs>
+        <g>
+            <use xlink:href='#wave' opacity=".3">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s"
+                    calcMode="spline" values="270 230; -334 180; 270 230" keyTimes="0; .5; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+            </use>
+            <use xlink:href='#wave' opacity=".6">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s"
+                    calcMode="spline" values="-270 230;243 220;-270 230" keyTimes="0; .6; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+            </use>
+            <use xlink:href='#wave' opacty=".9">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s"
+                    calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+            </use>
+        </g>
+    </svg>
+
+    <!-- ANIMATION END -->
+
+
+    <!-- ============ Chat Bot Starts ============ -->
+    <!-- chat bot -->
+    <div class="chat-window">
+        <div class="chat-header">
+            <h3>Chat with us</h3>
+            <button id="close-button"><i class="uil uil-multiply"></i></button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message">
+                <p>Hi, how can I help you?</p>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" placeholder="Type your message here" id="message-input">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <button id="chatbot-button"><img src="Images/bot1.png"></button>
+
+    <script>
+        let chatbotMessages = [
+            {
+                message: "Hi, how can I help you?",
+                sender: "bot",
+            },
+            {
+                message: "What are your store hours?",
+                sender: "user",
+            },
+            {
+                message: "Our store hours are 9am-9pm Monday through Saturday and 10am-6pm on Sundays.",
+                sender: "bot",
+            },
+            {
+                message: "Do you have any deals or promotions?",
+                sender: "user",
+            },
+            {
+                message: "Yes, we have daily specials on our website, and we also offer a loyalty program for frequent customers.",
+                sender: "bot",
+            },
+            {
+                message: "What forms of payment do you accept?",
+                sender: "user",
+            },
+            {
+                message: "We accept cash and all major credit cards.",
+                sender: "bot",
+            },
+        ];
+
+        const chatWindow = document.querySelector('.chat-window');
+        const chatBody = document.querySelector('.chat-body');
+        const messageInput = document.querySelector('#message-input');
+        const sendButton = document.querySelector('#send-button');
+        const closeButton = document.querySelector('#close-button');
+        const chatbotButton = document.querySelector('#chatbot-button');
+
+        function sendMessage() {
+            const message = messageInput.value;
+            if (message.trim() === "") {
+                return;
+            }
+            const chatMessage = document.createElement('div');
+            chatMessage.classList.add('chat-message');
+            const chatMessageText = document.createElement('p');
+            chatMessageText.textContent = message;
+            chatMessage.appendChild(chatMessageText);
+            chatBody.appendChild(chatMessage);
+            messageInput.value = "";
+            const response = getResponse(message.toLowerCase());
+            const botMessage = document.createElement('div');
+            botMessage.classList.add('chat-message');
+            const botMessageText = document.createElement('p');
+            botMessageText.textContent = response;
+            botMessage.appendChild(botMessageText);
+            chatBody.appendChild(botMessage);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        function getResponse(message) {
+            for (let i = 0; i < chatbotMessages.length; i++) {
+                if (chatbotMessages[i].sender === "user" && message.includes(chatbotMessages[i].message.toLowerCase())) {
+                    return chatbotMessages[i + 1].message;
+                }
+            }
+            return "I'm sorry, I didn't understand your question.";
+        }
+
+        sendButton.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        closeButton.addEventListener('click', () => {
+            chatWindow.style.display = "none";
+        });
+        chatbotButton.addEventListener('click', () => {
+            chatWindow.style.display = "block";
+        });
+    </script>
+
+    <!-- ===========Chat bot Ends======== -->
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href=" index.html"><img src="https://mnit.ac.in/Images/Mnit_logo.png"></a>
+                <p>Malaviya National Institute of Technology Jaipur
+                    Jawahar Lal Nehru Marg,
+                    Jaipur-302017 (Rajasthan) INDIA
+                    webmaster[at]mnit.ac.in</p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href=" index.html"><i class="uil uil-estate"></i>Home</a></li>
+                    <li><a href=" about.html"><i class="uil uil-atom"></i>About</a></li>
+                    <li><a href=" Doctor.html"><i class="uil uil-user-md"></i>Doctors </a></li>
+                    <li><a href=" contacts.html"><i class="uil uil-phone-pause"></i>Contacts</a></li>
+                    <li><a href=" login.html"><i class="uil uil-sign-in-alt"></i>login</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Norms</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__socials">
+                <h4>Contacts</h4>
+                <div>
+                    <p>+91 7892789478</p>
+                    <p>dispensary@mnit.ac.in</p>
+                    <ul class="Social_Media">
+                        <li><a href="https://www.facebook.com/mnitjaipurindia/"><i class="uil uil-facebook"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/NIT_Jaipur"><i class="uil uil-twitter-alt"></i></a></li>
+                        <li><a href="https://www.instagram.com/mnitjaipurindia/"><i
+                                    class="uil uil-instagram-alt"></i></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/c/MNITJaipurIndia"><i class="uil uil-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/school/mnitjaipur/"><i
+                                    class="uil uil-linkedin-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <small>Disclaimer:Copyright © 2022 Malaviya National Institute of Technology Jaipur</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End of the footer section -->
+    <!-- linking the main javascript file -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Table</title>
+    <link rel="stylesheet" href="./css/medicineGiven_prescriptionForm.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<div class="prescription">
+    <div class="GoBack">
+        <a href="/patientLoginPage.html"><i class="fa fa-arrow-left"></i></a>
+    </div>
+    <div class="container">
+
+        <div class="heading">
+
+            <span><img class="Mnit_logo_main" src="https://mnit.ac.in/Images/Mnit_logo.png" width="80px"></span>
+            <h1>
+                MNIT DISPENSARY</h1>
+        </div>
+
+        <div class="con">
+
+
+            <!-- visit no -->
+            <div class="multi-selector">
+                <label>Visit Number:</label>
+                <div class="select-field" id="select-field1">
+                    <input type="text" name="" placeholder="Select Visit Number" id="visitno" class="input-selector">
+                    <span class="down-arrow" id="down-arrow1">&blacktriangledown;</span>
+                </div>
+                <!---------List of checkboxes and options----------->
+                <div class="list" id="list1"></div>
+            </div>
+
+        </div>
+
+        <!-- id -->
+        <div id="patient-id"></div>
+
+        <div class="grid_view">
+            <!-- name -->
+            <div class="Name" id="patient-name">
+            </div>
+            <!-- date -->
+            <div class="VisitDate" id="visitDate">
+                <label for="date">Visit Date:</label>
+                <p></p>
+            </div>
+            <!-- name -->
+            <div class="illness" id="ill-ness">
+            </div>
+
+
+
+            <table class="_table" id="med_given">
+                <thead>
+                <tr>
+                    <th>Medicine Name</th>
+                    <th>Medicine Type</th>
+                    <th>Dosage</th>
+                    <th>Timings</th>
+                    <th>Quantity Prescribed</th>
+                    <th>Quantity Given</th>
+                </tr>
+                </thead>
+                <tbody id="table_body">
+                </tbody>
+            </table>
+            <div class="submit">
+                <button type="submit" class="btn" id="openPopup">Submit</button>
+                <div class="popup" id="popup">
+                    <img src="https://i.postimg.cc/zGD23MGB/tick2.png">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been successfully Submitted.Thanks!</p>
+                    <button type="button" class="yup" id="closePopup">Ok</button>
+                </div>
+                <button id="print-button">Print Prescription</button>
+
+                <script>
+                    document.getElementById("print-button").addEventListener("click", function () {
+                        // window.print();
+                        window.location.href = "prescription.html";
+                    });
+                </script>
+            </div>
+
+            <!-- <div class="Patient_History">
+                <a href="/patientDetails - Copy/Navbar.html"><button>View Patient's Medical History</button></a>
+            </div> -->
+
+
+            <script>
+                // let popup = document.getElementById("popup");
+                //
+                // function openPopup() {
+                //     popup.classList.add("open-popup")
+                // }
+                // function closePopup() {
+                //     popup.classList.remove("open-popup")
+                // }
+            </script>
+            <script type="module" src="medicineGiven_PF.js"></script>
+            <script type="module" src="visit_number.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

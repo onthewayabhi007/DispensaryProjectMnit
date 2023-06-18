@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Table</title>
+    <link rel="stylesheet" href="./css/stockTable.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- <div class="sidebar">
+        <header>
+            <img src="https://i.postimg.cc/TPycsHwH/DocImage.webp" alt="">
+            <h3>XYZ</h3>
+        </header>
+        <ul>
+            <li><a href="#"><i class="fas fa-qrcode"></i>MedicineStock Details</a></li>
+            <li><a href="patientLoginPage.html"><i class="fas fa-user-alt"></i>Patient Login</a></li>
+            
+            
+        </ul>
+    </div> -->
+    <div class="sidebar">
+        <header>
+            <img src="https://i.postimg.cc/rpZ167bg/bad786dfe4f227555be6fa2484b0b9a3.jpg" alt="">
+            <h3 id="staff-name"></h3>
+        </header>
+        <button class="sidebar-toggle"><i class="fa-solid fa-bars"></i></button>
+        <ul>
+            <li><a href="#"><i class="fas fa-qrcode"></i>MedicineStock Details</a></li>
+            <li><a id="patient-login"><i class="fas fa-user-alt"></i>Patient Login</a></li>
+        </ul>
+    </div>
+    <!-- Navigationa Bar Started -->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><img src="https://mnit.ac.in/Images/Mnit_logo.png" width="75px" height="75px"></a>
+            <h5 class="text-white">
+                <a class="mnit-english-name">Malaviya National Institute of Technology Jaipur </a>
+                <a class="mnit-hindi-name">मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर</a>
+            </h5>
+            <ul class="nav__menu">
+                <li><a id="logout-button"><i class="fas fa-solid fa-right-to-bracket"></i>&nbsp;logout</a></li>
+            </ul>
+            <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+            <button id="close-menu-button"><i class="uil uil-times"></i></button>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar completed-->
+    <div class="table">
+        <div class="table_header">
+            <p>Medicine Details</p>
+            <div>
+                <input type="text" id="searchInput" placeholder="Search by Name">
+                <button class="add_new" id="open-form-btn">+ Add New Medicine</button>
+
+                <!--Table Entries-->
+                <div class="form-popup" id="myForm">
+                    <form action="" class="form-container">
+                        <label for="branch"><b>Branch</b></label>
+                        <input type="text" placeholder="Branch Name" name="Branch">
+
+                        <label for="Medicine Name"><b>Medicine Name</b></label>
+                        <input type="text" placeholder="Medicine Name" name="Medicine Name">
+
+                        <label for="Type"><b>Type</b></label>
+                        <input type="text" placeholder="Type" name="Type">
+
+                        <label for="Base Count"><b>Base Count</b></label>
+                        <input type="number" placeholder="Base count" name="Base Count">
+
+                        <label for="Actual Count"><b>Actual Count</b></label>
+                        <input type="number" placeholder="Actual count" name="Actual Count">
+
+                        <button class="editBtn"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="deleteBtn"><i class="fa-solid fa-trash"></i></button>
+
+
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" id="close-form-btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="table_section">
+            <table id="medicine_stockTable">
+                <thead>
+                    <tr>
+                        <th>S No.</th>
+                        <th>Medicine Name</th>
+                        <th>Type</th>
+                        <th>Base Count</th>
+                        <th>Actual Count</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script type="module" src="stockTable.js"></script>
+<!--    <script type="module" src="addMedicine.js"></script>-->
+    <script>
+        const button = document.querySelector('.sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        button.addEventListener('click', () => {
+            sidebar.classList.toggle('show');
+        });
+    </script>
+
+    <script>
+        document.getElementById('patient-login').addEventListener('click',() => {
+            window.location.replace("patientLoginPage.html");
+        })
+        // Assuming you have an element with id "logout-button"
+        const logoutButton = document.getElementById('logout-button');
+
+        logoutButton.addEventListener('click', () => {
+            // Perform logout actions here
+            // For example, clear session/local storage
+
+            // Clear session/local storage
+            localStorage.clear(); // or localStorage.clear();
+
+            // Replace the current history state with a new one
+            // window.history.replaceState({ noBack: true }, '', 'login1.html');
+
+            // Redirect to a different page
+            window.location.replace('login1.html') ;
+        });
+
+        // Manage history
+        // window.addEventListener('popstate', (event) => {
+        //     // Check if the current state has "noBack" property
+        //     if (event.state && event.state.noBack) {
+        //         // Redirect to a different page
+        //         window.location.replace('login1.html');
+        //     }
+        // });
+
+
+    </script>
+</body>
+
+</html>

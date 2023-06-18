@@ -1,0 +1,91 @@
+
+// const signin = async (req, res) => {
+//     try {
+//         const signInJson = {
+//             userName: req.body.userName,
+//             password: req.body.password
+//         }
+//         const id = req.body.userName
+//         // console.log(req.body)
+//         const tempId = []
+//         await patient.get().then((querySnapshot) => {
+
+//             querySnapshot.forEach((doc) => {
+//                 tempId.push(doc.id)
+//             })
+//             // console.log(tempId)
+//         })
+//         let existingUser = tempId.find(_id => _id == signInJson.userName)
+//         // console.log(existingUser);
+
+//         if (!existingUser) {
+//             console.log("User not found");
+//             return res.status(404).json({ message: "User not found" });
+//         }
+//         else {
+//             const arr = await patient.doc(existingUser).get();
+//             const userRef = patient.doc(existingUser).collection("visits")
+//             let arrVisit = [];
+
+//             const existingUserData = arr.data();
+
+//             const matchPassword = await bcrypt.compare(signInJson.password, existingUserData.password);
+//             if (!matchPassword) {
+//                 console.log("Invalid Credentials")
+//                 return res.status(404).send("Invalid Credentials")
+//             }
+//             else {
+//                 const token = jwt.sign({ existingUserData }, SECRET_KEY)
+            
+//                 const outerQuery = userRef.get();
+
+//                 outerQuery.then(outerQuerySnapshot => {
+//                     const innerQueries = [];
+            
+//                     if (!outerQuerySnapshot) {
+//                         console.error('No documents found');
+//                         return res.status(404).send('No documents found');
+//                       }
+//                     // console.log(outerQuerySnapshot);
+//                     let docs = [];
+//                     let docs1 = [];
+//                     outerQuerySnapshot.forEach(outerDoc => {
+//                         const innerQuery = userRef.doc(outerDoc.data().visitNo).collection('medDetails').get();
+//                         docs1.push({...outerDoc.data()})
+//                         innerQuery.then(innerQuerySnapshot => {
+//                             if (innerQuerySnapshot) {
+//                               innerQuerySnapshot.forEach((innerDoc,i) => {
+                                
+//                                 docs.push({docs1,medDetails: innerDoc.data()});
+//                               });
+//                             }
+//                           })
+//                           .catch(error => {
+//                             console.error('Error fetching documents:', error);
+//                             res.status(500).send('Error fetching documents');
+//                           });
+//                         innerQueries.push(innerQuery);
+//                         // console.log(innerQueries)
+//                     });
+
+//                     Promise.all(innerQueries)
+//                         .then(() => {
+//                             console.log(docs);
+//                              res.status(201).json({ "loginDetails": existingUserData, "visit": docs })
+
+//                             // Now you can process the `docs` array, which contains all the documents
+//                         })
+//                         .catch(error => {
+//                             console.error('Error fetching documents:', error);
+//                         });
+//                 })
+//                     .catch(error => {
+//                         console.error('Error fetching documents:', error);
+//                     });
+                
+//             }
+//         }
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }

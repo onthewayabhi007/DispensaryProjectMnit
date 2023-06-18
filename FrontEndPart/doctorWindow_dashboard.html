@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/doctorWindow_dashboard.css">
+    <script type = "module" src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="sidebar"> 
+        <header>
+            <img src="https://i.postimg.cc/TPycsHwH/DocImage.webp" alt="">
+            <h3>Dr. Shobha Jindal</h3>
+        </header>
+        <ul>
+            <li><a href="doctorWindow_dashboard.html"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+            <li><a href="doctorWindow_patientLoginPage.html"><i class="fas fa-user-alt"></i>Patient Login</a></li>
+            <!-- <li><a href="doctorWindow_docfeedback.html"><i class="fa-solid fa-comments"></i>Doctor's Feedback</a></li> -->
+        </ul>
+    </div>
+    <!-- Navigation Bar Started -->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><img src="https://mnit.ac.in/Images/Mnit_logo.png" width="75px" height="75px"></a>
+            <h5 class="text-white">
+                <a class="mnit-english-name">Malaviya National Institute of Technology Jaipur </a>
+                <a class="mnit-hindi-name">मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर</a>
+            </h5>
+            <ul class="nav__menu">
+                <li><a href="#"><i class="fas fa-solid fa-right-to-bracket"></i>&nbsp;logout</a></li>
+            </ul>
+            <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+            <button id="close-menu-button"><i class="uil uil-times"></i></button>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar completed-->
+    <div class="main">
+        <div class="box" id="box1">
+            <img src="https://i.postimg.cc/xdFKyG3y/24.png" alt="">
+            <div id="perDayPatients"></div>
+            <p>Patients visited Today</p>
+        </div>
+        <div class="box" id="box2">
+            <img src="https://i.postimg.cc/jSDqnzCr/arrow.png" alt="">
+            <div id="totalPatients"></div>
+            <p>Patients visited till now</p>
+        </div>
+    </div>
+
+    <main class="table">
+        <section class="heading">
+            <h3> Recent Visits</h3>
+        </section>
+        <section class="tableBody">
+            <table id="Recent-visits">
+                <thead>
+                    <tr>
+                        <th> Visit Date</th>
+                        <th> Patient's Name</th>
+                        <th>Patient's ID</th>
+                        <th>Patient's Phone No.</th>
+                        <th> Illness</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+               
+            </table>
+        </section>
+    </main>
+    <script type ="module" src="doctorWindow_dashboard_recentVisits.js"></script>
+</body>
+</html>

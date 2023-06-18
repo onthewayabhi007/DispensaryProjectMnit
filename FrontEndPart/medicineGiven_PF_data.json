@@ -1,0 +1,32 @@
+
+
+{
+
+    "patientDetails": {
+        "patientName": "Sanam",
+        "patientID": "2021UCH1234",
+        "illness" : "High Fever"
+    },
+
+    
+    "medicine": [
+      {
+        "med_name": "Item 1",
+        "dosage": "This is the description for Item 1",
+        "med_prescribed": 10.99
+      },
+      {
+        "med_name": "Item 2",
+        "dosage": "This is the description for Item 2",
+        "med_prescribed": 19.99
+      },
+      {
+        "med_name": "Item 3",
+        "dosage": "This is the description for Item 3",
+        "med_prescribed": 4.99
+      }
+    ]
+}
+
+
+  

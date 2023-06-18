@@ -1,0 +1,44 @@
+{
+    "doctorName": "Dr. Abhi Verma ",
+    "doctorType": "Homeopathic",
+    "patientName": "Mr. Kuldeep Singh ",
+    "date": "19/05/2023 ",
+    "disease": "Nausea, Headache",
+    "medicines": [
+        {
+            "medicineName": "Medicine 1",
+            "dosage": "t.i.d",
+            "quantity_prescribed": "30 tablets",
+            "quantity_given": "30 tablets",
+            "timings": "before meal"
+        },
+        {
+            "medicineName": "Medicine 2",
+            "dosage": "t.i.d",
+            "quantity_prescribed": "30 tablets",
+            "quantity_given": "30 tablets",
+            "timings": "after meal"
+        },
+        {
+            "medicineName": "Medicine 3",
+            "dosage": "t.i.d",
+            "quantity_prescribed": "30 tablets",
+            "quantity_given": "30 tablets",
+            "timings": "after every meal"
+        },
+        {
+            "medicineName": "Medicine 4",
+            "dosage": "t.i.d",
+            "quantity_prescribed": "30 tablets",
+            "quantity_given": "30 tablets",
+            "timings": "before every meal"
+        },
+        {
+            "medicineName": "Medicine 5",
+            "dosage": "t.i.d",
+            "quantity_prescribed": "30 tablets",
+            "quantity_given": "30 tablets",
+            "timings": "before meal"
+        }
+    ]
+}
