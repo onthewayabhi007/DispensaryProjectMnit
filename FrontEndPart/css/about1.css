@@ -1,0 +1,13 @@
+
+.avatar img {
+    display: block;
+    border-radius: 1rem;
+    border: 4px groove var(--color-white);
+    margin-top: -2%;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

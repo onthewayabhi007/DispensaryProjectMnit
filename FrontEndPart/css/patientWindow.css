@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #080098;
+    --color-succcess: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: #rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: #rgba(255, 255, 255, 0.7);
+    --color-black: #000000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 90%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: var(--color-black);
+    background: linear-gradient(120deg, #080098, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+/*Navigation bar */
+nav {
+    background: var(--color-primary);
+    width: 100 vw;
+    height: 6rem;
+    position: relative;
+    top: 0;
+    z-index: 11;
+    border-bottom: 0.063rem solid var(--color-white);
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    align-content: baseline;
+}
+
+.nav__container a {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: baseline;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: normal;
+    margin-right: 1rem;
+}
+
+.nav__container h5 {
+    color:var(--color-white);
+    font-size: 30px;
+    margin-right: 25rem;
+}
+
+.nav__menu a {
+    display: flex;
+    font-size: 0.9rem;
+    color:var(--color-white);
+    transition: var(--transition);
+}
+
+.nav__menu a:hover {
+    color: var(--color-bg2);
+}
+
+.text-white a {
+    display: flex;
+    font-size: 1.9rem;
+    justify-content: left;
+    align-items: center;
+    margin-left: 0%;
+}
+
+/* navigation bar complete */
+
+.table_container {
+    position: absolute;
+    top: 7rem;
+    left: 8%;
+    width: 84%;
+    height: 36rem;
+    background-color: #fff3;
+    box-shadow: 0 0.375rem 0.813rem #0005;
+    border-radius: 0.813rem;
+}
+
+.patient-info {
+    color: white;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(29, 29, 133);
+    /* background-color: #1f2641; */
+    padding: 0.813rem 1rem;
+
+}
+
+#patient-info {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+
+.tableBody {
+    width: 95%;
+    height: 26rem;
+    background-color: #fffb;
+
+    margin: 0.813rem auto;
+    border-radius: 0.5rem;
+
+    overflow: auto;
+}
+
+.tableBody::-webkit-scrollbar {
+    width: 0.5rem;
+
+}
+
+.tableBody::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-color: #1f26414e;
+    visibility: hidden;
+}
+
+.tableBody:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+table,
+th,
+td {
+    padding: 0.75rem;
+
+}
+
+thead th {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: #8f51a9;
+    /*#1f26415e #d5d1defe; */
+    color: white;
+}
+
+.tableBody td {
+    font-size: 0.875rem;
+}
+
+tr:hover {
+    background-color: #9675a4;
+    /* transform:scale(1.02); */
+    /* box-shadow: 0px 0.125rrem 0.75rem rgb(29,29,133); */
+}
+
+tr:hover .nested-table td {
+    background-color: #474396;
+    color: white;
+    /* transform: scale(1.02);
+    font-weight: 800;
+    color:#080098;
+    text-shadow: 0.04rem 0.04rem white; */
+}
+
+
+/* Feedback Button */
+.Givefeedback button {
+    position: absolute;
+    top: calc(100% - 3rem);
+    left: 83%;
+    width: 11.25rem;
+    height: 2.188rem;
+    text-align: center;
+    padding: 0.5rem 0.313rem;
+    margin-left: 2.5rem;
+    border-radius: 5rem;
+    background-color: #8f51a9;
+    color: white;
+
+    border: 0.031rem solid #1f2641;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+.Givefeedback button:hover {
+    background-color: #080098;
+    color: white;
+
+}

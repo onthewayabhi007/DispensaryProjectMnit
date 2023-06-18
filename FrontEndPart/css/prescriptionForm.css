@@ -1,0 +1,418 @@
+*{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #efefef;
+    padding: 1.563rem;
+
+}
+
+.container{
+    max-width: 70rem;
+    width: 100%;
+    background-color:white;
+    margin:auto;
+    padding:  0.938rem;
+    box-shadow: 0 0.125rem 0.125rem #0001, 0 1px 6px #0001;
+    border-radius: 0.313rem;
+    overflow-x: auto;
+
+}
+
+/* add remove table */
+
+._table{
+    background-color:rgb(240,240,240);
+    width: 100%;
+    border: 0.063rem solid black;
+    border-collapse: collapse;
+}
+table th{
+    /* background-color:yellow; */
+    color:#080098;
+}
+table td{
+    /* background-color:yellow; */
+}
+
+._table :is(th,td){
+    border: 0.063rem solid #0002;
+    padding: 0.5rem 0.625rem;
+}
+
+/* form field design start */
+.form_control{
+    border: 0.063rem solid #0002;
+    background-color: transparent;
+    outline: none;
+    padding: 0.5rem 0.75rem;
+    font-family: 1.2rem;
+    width: 100%;
+    color: #333;
+    color: #080098;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.form_control::placeholder{
+    color:inherit;
+    opacity: 0.5;
+}
+.form_control:is(:focus,:hover){
+    box-shadow: inset 0 0.063rem 0.375rem #0002;
+}
+/* form field design end */
+
+.success{
+    background-color: #080098 !important;
+}
+.warning{
+    background-color: #ebba33 !important;
+}
+.primary{
+    background-color: #259dff !important;
+}
+.secondary{
+    background-color: #00bcd4 !important;
+}
+.danger{
+    background-color: #ff5722 !important;
+}
+
+.action_container{
+    display: inline-flex;
+}
+
+.action_container>*{
+    border: none;
+    outline:none;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 0.875rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.action_container>*+*{
+    border-left:0.063rem solid #fff5;
+}
+
+.action_container>*:hover{
+    filter: hue-rotate(-20deg) brightness(0.97);
+    transform: scale(1.05);
+    border-color: transparent;
+    box-shadow: 0 0.125rem 0.625rem #0004;
+    border-radius: 0.125rem;
+}
+.action_container>*:active{
+    transition: unset;
+    transform: scale(.95);
+}
+
+/* add-remove table complete */
+
+
+body{
+    background-color: #1f2641;
+}
+.container{
+    padding: 3.125rem 0.625rem;
+    box-shadow: 0 0.375rem 0.813rem #0007;
+}
+
+.container h4{
+    margin-bottom: 1rem;
+    color:#080098;
+}
+
+.heading{
+    /* border:2px solid red; */
+    background-color: #2e3267;
+    padding: 0.375rem 0.625rem;
+    color : white;
+    text-align: center;
+}
+.Name{
+    display : flex;
+    margin: 0rem 1rem;
+    /* padding-top:0.75rem; */
+    color : #080098;
+    font-size: 1.25rem;
+}
+
+.Name h4{
+    width:16rem;
+    padding: 0.525rem 0.313rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    /* border-radius: 0.25rem; */
+    border:0.02rem solid rgb(193, 193, 193);
+    margin-bottom: 0;
+    margin-top: 0;
+    color:grey;
+}
+
+.patientID{
+    display:flex;
+    margin-left: 1rem;
+    padding-top:0;
+    color : #080098;
+    font-size: 1.25rem;
+}
+
+.patientID p{
+    width:16rem;
+    /* padding: 0.525rem 0.313rem; */
+    font-size: 1rem;
+    /* margin-left: 1rem; */
+    border-radius: 0.25rem;
+    border:0.02rem solid rgb(193, 193, 193);
+    margin-bottom: 0;
+    margin-top: 0;
+    color:grey;
+}
+
+.VisitDate{
+    display:flex;
+    padding-top:0;
+    color : #080098;
+    font-size: 1.25rem;
+}
+
+.VisitDate p{
+    width:16rem;
+    padding: 0.525rem 0.313rem;
+    font-size: 1rem;
+    /* margin-left: 1rem; */
+    border-radius: 0.25rem;
+    border:0.02rem solid rgb(193, 193, 193);
+    margin-bottom: 0;
+    margin-top: 0;
+    color:grey;
+}
+
+
+/* input[type="date"]:invalid::-webkit-datetime-edit {
+    color:rgb(189, 188, 188);
+} */
+
+#table_body select{
+    width:6.25rem;
+    padding: 0.5rem 0.313rem;
+    margin-left: 2.5rem;
+    border-radius: 0.5rem;
+    display: table-row-group;
+}
+
+select{
+    width:6.25rem;
+    padding: 0.5rem 0.313rem;
+    margin-left: 2.5rem;
+    border-radius: 0.5rem;
+}
+.submit{
+
+    padding: 0.75rem 0.625rem;
+    color : white;
+}
+.submit button:hover{
+    transform: scale(1.02);
+}
+.submit button{
+    width:12.5rem;
+    padding: 0.625rem 0.313rem;
+    border-radius:1.25rem;
+    margin-left: 2.188rem;
+    font-size: 1.125rem;
+    background-color: #080098;
+    border-color:#1f2641;
+    color:white;
+    cursor: pointer;
+}
+
+.Patient_History button{
+    width:18.75rem;
+    height:2.5rem;
+    padding: 0.625rem 0.313rem;
+    margin-left: 2.5rem;
+    border-radius: 0.625rem;
+    background-color: rgb(240,240,240);
+    color:#080098;
+    border: 0.031rem solid #1f2641;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+.Patient_History button:hover{
+    background-color:#080098;
+    color:white;
+
+}
+
+.Dosage select{
+    width:6.25rem;
+    padding: 0.625rem 0.313rem;
+    margin-left: 2.5rem;
+    border-radius: 0.5rem;
+}
+.GoBack{
+    font-size: 2.5rem;
+    float : left;
+    top:1.25rem;
+    filter: opacity(.5) drop-shadow(0 0 0 #080098);
+    background-color: white;
+}
+
+/* Popup */
+.popup{
+    width: 25rem;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 1.875rem 1.875rem;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    box-shadow: 0px 0px 8px rgb(29,29,133);
+}
+
+.popup img{
+    width: 6.25rem;
+    margin-top: -3.125rem;
+    border-radius: 50%;
+}
+
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup button{
+    width: 40%;
+    background: #080098;
+    color:white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0.313rem 0.313rem rgba(0,0,0,0.2);
+    float: right;
+}
+
+.popup button:hover{
+    transform: scale(1.02);
+}
+.popup h2{
+    color:#080098;
+}
+.popup p{
+    color:#1f2641;
+    padding-left: 1.563rem;
+    font-size: larger;
+}
+/* popup complete */
+
+
+
+
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* body{
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    margin: 0 ;
+    background: #0276ad;
+} */
+
+label{
+    margin: 0.5rem 1rem;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #080098;
+    /* margin-bottom: 0.313rem; */
+}
+
+
+/* illness dropdown */
+input {
+    outline: none;
+    border: none;
+}
+
+.multi-selector {
+    /* display: flex; */
+    margin:1rem 0;
+    width: max-content;
+}
+
+.select-field {
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.select-field,
+.task,
+.list {
+    /* width: 100%; */
+    background-color: white;
+    padding: 0.3rem;
+}
+
+
+.list {
+    box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
+    display: none;
+}
+
+.list{
+    width: 95%;
+    max-height: 6rem;
+    background-color: #fffb;
+
+    margin: 0.813rem auto;
+    border-radius: 0.5rem;
+
+    overflow: auto;
+}
+
+
+.down-arrow {
+    font-size: 1.2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.task {
+    display: block;
+    padding-left: 0;
+}
+
+.task span {
+    float: right;
+    font-size: 0.6rem;
+    padding-top: 6px;
+}
+
+.task:hover {
+    background-color: aliceblue;
+}
+
+.show {
+    display: block;
+}
+
+.rotate180 {
+    transform: rotate(-60deg);
+}

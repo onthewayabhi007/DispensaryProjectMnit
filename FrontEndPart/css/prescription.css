@@ -1,0 +1,72 @@
+ body {
+            font-family: Arial, sans-serif;
+        }
+
+        .prescription {
+            border: 2px solid #000000;
+            padding: 40px;
+            max-width:45rem;
+            margin: 2px auto;
+            top: 50%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            row-gap: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .prescribed-by {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 2rem;
+
+        }
+
+        .medicine-list {
+            margin-bottom: 20px;
+        }
+
+        .medicine-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .medicine-list th,
+        .medicine-list td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        .medicine-list th {
+            text-align: left;
+        }
+
+        .signature {
+            margin-top: 20px;
+            text-align: right;
+            margin-top: 3rem;
+        }
+
+        .caution
+        {
+            display: grid;
+            align-items: center;
+            left: 50%;
+            margin-top: 1rem;
+        }
+        .print {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
